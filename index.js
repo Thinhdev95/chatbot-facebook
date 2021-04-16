@@ -15,6 +15,7 @@ var server = https.createServer(app);
 
 
 app.get('/', (req, res) => {
+    console.log("home");
   res.send("Home page. Server running okay.");
 });
 
