@@ -1,5 +1,5 @@
 var logger = require('morgan');
-var http = require('http');
+var https = require('https');
 var bodyParser = require('body-parser');
 var express = require('express');
 var request = require('request');
@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: false
 }));
-var server = http.createServer(app);
+var server = https.createServer(app);
 
 
 app.get('/', (req, res) => {
