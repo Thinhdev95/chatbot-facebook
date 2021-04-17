@@ -48,7 +48,9 @@ function handleMessage(sender_psid, received_message) {
         console.log(received_message.text)
         switch(received_message.text){
             case "Hello": textreponse = "Hello bạn"
+            break;
             case "Hi": textreponse = "Hi bạn"
+            break;
             default: textreponse = "Bạn nói gì vậy"
         }
       response = {
