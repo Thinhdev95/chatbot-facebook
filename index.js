@@ -46,10 +46,17 @@ function handleMessage(sender_psid, received_message) {
     let textreponse = "Hello bạn , tôi là bot đây";
     if (received_message.text) {  
         console.log(received_message.text)
-        switch(received_message.text){
-            case "Hello": textreponse = "Hello bạn"
+        // switch(received_message.text){
+        //     case "Hello": textreponse = "Hello bạn"
+        //     break;
+        //     case "Hi": textreponse = "Hi bạn"
+        //     break;
+        //     default: textreponse = "Bạn nói gì vậy"
+        // }
+        switch(true){
+            case received_message.text.includes("Hello"): textreponse = "Hello bạn"
             break;
-            case "Hi": textreponse = "Hi bạn"
+            case received_message.text.includes("hi"): textreponse = "Hi bạn"
             break;
             default: textreponse = "Bạn nói gì vậy"
         }
