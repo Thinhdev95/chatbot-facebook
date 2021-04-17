@@ -45,6 +45,7 @@ function handleMessage(sender_psid, received_message) {
     let response;
     let textreponse = "Hello bạn , tôi là bot đây";
     if (received_message.text) {  
+        console.log(received_message.text)
         switch(received_message.text){
             case "Hello": textreponse = "Hello bạn"
             case "Hi": textreponse = "Hi bạn"
